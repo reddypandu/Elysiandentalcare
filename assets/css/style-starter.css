@@ -21409,11 +21409,13 @@ h4.service-heading {
   font-weight: 700;
 }
 .mvv_list1 {
-  position: relative;
+  /* position: relative;
   margin: 24px auto 0;
   padding: 43px 52px 19px;
-  /* border: 10px solid #ffffff; */
-  background: #f5f5f5;
+  border: 10px solid #ffffff;
+  background: #f5f5f5; */
+  position: relative;
+  padding: 20px 20px;
 }
 .mvv_list_row1 .row-md-4 {
   margin: 10px;
