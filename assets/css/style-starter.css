@@ -21412,7 +21412,7 @@ h4.service-heading {
   position: relative;
   margin: 24px auto 0;
   padding: 43px 52px 19px;
-  border: 10px solid #ffffff;
+  /* border: 10px solid #ffffff; */
   background: #f5f5f5;
 }
 .mvv_list_info1 h3 {
