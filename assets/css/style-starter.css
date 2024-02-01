@@ -4542,7 +4542,7 @@ fieldset:disabled .btn {
   background-color: var(--primary-color);
   position: fixed;
   bottom: 10px;
-  left: 10px;
+  right: 15px;
   z-index: 999;
   box-shadow: 2px 2px 5px black;
   animation: w 5s linear infinite;
@@ -4550,11 +4550,12 @@ fieldset:disabled .btn {
 
 .whatsapp-link div {
   position: fixed;
-  left: 60px;
+  right: 60px;
   bottom: 12px;
   max-width: 100px;
   background-color: white;
   border-radius: 5px;
+  border: 0.5px solid var(--primary-color);
   display: none;
   transition: 0.5s all;
 }
@@ -4980,7 +4981,16 @@ fieldset:disabled .btn {
   flex: 1 1 auto;
   padding: 1rem 1rem;
 }
-
+.v video {
+  border: 2px solid var(--primary-color);
+  margin: 5px;
+  width: 100%;
+}
+@media (max-width: 575px) {
+  .v video {
+    width: 100%;
+  }
+}
 .card-title {
   margin-bottom: 0.5rem;
 }
@@ -20369,7 +20379,8 @@ h3.title-big {
 
 /* footer section */
 footer.w3l-footer-29-main {
-  background: #09131d;
+  background: var(--gradient-color);
+  border-top: 2px solid white;
 }
 
 .w3l-footer-29-main h6.footer-title-29 {
@@ -20378,6 +20389,7 @@ footer.w3l-footer-29-main {
   margin-bottom: 24px;
   font-weight: 600;
   color: #fff;
+  text-decoration: underline;
 }
 
 .w3l-footer-29-main .footer-list-29 ul li {
@@ -20393,7 +20405,7 @@ footer.w3l-footer-29-main {
 .w3l-footer-29-main .footer-list-29 p a,
 .w3l-footer-29-main .footer-list-29 p {
   font-size: 15px;
-  color: #ababab;
+  color: white;
   border-bottom: 1px solid rgb(255 255 255 / 22%);
   padding-bottom: 4px;
 }
@@ -20418,7 +20430,9 @@ p.copy-footer-29 {
 }
 
 p.copy-footer-29 a {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  color: green;
+  font-weight: 700;
 }
 
 p.copy-footer-29 a:hover {
@@ -21119,10 +21133,13 @@ h4.service-heading {
   font-size: 40px;
   color: var(--primary-color);
 }
-
+.form-inner-cont {
+  max-width: 800px;
+  border: 1px solid var(--primary-color);
+  padding: 5px;
+}
 .form-inner-cont input,
 .form-inner-cont textarea {
-  outline: none;
   width: 100%;
   font-size: 16px;
   margin-bottom: 25px;
@@ -21131,7 +21148,7 @@ h4.service-heading {
   padding: 12px;
   -webkit-appearance: none;
   background: var(--bg-light);
-  border: 1px solid var(--border-color-light);
+  border: 1px solid black;
   border-radius: 4px;
 }
 
@@ -21242,15 +21259,15 @@ h4.service-heading {
 
 .know_abt h2 {
   text-transform: uppercase;
-  font-size: 69px;
+  font-size: 40px;
   font-weight: 500;
   color: #232a2c;
   margin: 12px 0 8px;
-  line-height: 63px;
+  line-height: 40px;
 }
 
 .know_abt h3 {
-  font-size: 31px;
+  font-size: 25px;
   margin: 0 0 18px;
   color: #e31a1a;
   display: inline-block;
@@ -21339,8 +21356,8 @@ h4.service-heading {
   margin: 24px auto 0;
   text-align: center;
   padding: 43px 52px 19px;
-  border: 10px solid #ffffff;
-  background: #f5f5f5;
+  border: 2px solid white;
+  background: var(--primary-color);
   box-shadow: 0px 4px 3px #b5b5b5;
   width: 350px;
   height: 350px;
@@ -21378,16 +21395,18 @@ h4.service-heading {
   display: inline-block;
   border-bottom: 2px dotted;
   font-size: 30px;
-  color: #e31a1a;
+  color: black;
 }
 
 .mvv_list_info p {
   margin: 0px;
-  color: #434343;
+  color: white;
 }
 
 .mvv_list_info a {
   display: block;
+  color: white;
+  font-weight: 700;
 }
 .mvv_list1 {
   position: relative;
