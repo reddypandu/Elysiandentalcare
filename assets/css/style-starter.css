@@ -21153,9 +21153,8 @@ h3.title-big-2 {
   border: none;
   background: none;
   box-shadow: var(--box-shadow);
- 
 }
-.service-section .card .card-header{
+.service-section .card .card-header {
   height: 300px;
 }
 .service-section .card img {
