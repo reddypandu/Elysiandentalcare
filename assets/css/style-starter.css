@@ -19407,7 +19407,11 @@ p.sub-title {
   min-height: 100vh;
   z-index: 0;
 }
-
+@media (max-width: 992px) {
+  #demo-1 {
+    background: url(../images/banner1mobile.jpg);
+  }
+}
 #demo-1:before {
   content: "";
 
