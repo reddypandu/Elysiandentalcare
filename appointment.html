@@ -107,10 +107,10 @@
     <section class="inner-banner py-5">
         <div class="w3l-breadcrumb py-lg-5">
             <div class="container pt-4 pb-sm-4">
-                <h4 class="inner-text-title font-weight-bold pt-sm-5 pt-4">Contact Us</h4>
+                <h4 class="inner-text-title font-weight-bold pt-sm-5 pt-4">Book An Appointment</h4>
                 <ul class="breadcrumbs-custom-path">
                     <li><a href="/">Home</a></li>
-                    <li class="active"><i class="fas fa-angle-right mx-2"></i>Contact</li>
+                    <li class="active"><i class="fas fa-angle-right mx-2"></i>Appointment</li>
                 </ul>
             </div>
         </div>
@@ -120,49 +120,45 @@
     <!-- contact section -->
     <section class="w3l-contact-11 py-5" id="contact">
         <div class="container py-md-5 py-4">
-            <h3 class="title-style text-center mb-5"><span>Contact </span> Us</h3>
-            <div class="row text-center mb-5 pb-lg-5 pb-sm-4">
-                <div class="col-lg-3 col-sm-6 contact-info">
-                    <i class="fas fa-map-marked-alt"></i>
-                    <h4>Location</h4>
-                    <p>4-1383, Raja Rajeswara, above Apollo Pharmacy, opposite to Hyundai Service Center, Raja
-                        Rajeshwara Nagar, Kondapur, Telangana 500084</p>
-                </div>
-                <div class="col-lg-3 col-sm-6 contact-info mt-md-0 mt-4">
-                    <i class="fas fa-headset"></i>
-                    <h4>Phone</h4>
-                    <p><a href="tel:+919381758514">+919381758514</a></p>
-                </div>
-                <div class="col-lg-3 col-sm-6 contact-info mt-lg-0 mt-4">
-                    <i class="fas fa-envelope-open-text"></i>
-                    <h4>Email</h4>
-                    <p><a href="mailto:vsmilezdentalclinicZ@gmail.com" class="email">elysiandentalcare@gmail.com</a>
-                    </p>
-                </div>
-                <div class="col-lg-3 col-sm-6 contact-info mt-lg-0 mt-4">
-                    <i class="fas fa-user-clock"></i>
-                    <h4>Working Hours</h4>
-                    <p>24 Hours</p>
-                </div>
-            </div>
+            <h3 class="title-style text-center mb-5">Book An <span>Appointment</span></h3>
+
             <div class="form-inner-cont mx-auto">
-                <form action="" method="post" class="signin-form">
+                <form id="bookingForm">
                     <div class="row align-form-map">
-                        <div class="col-sm-6 form-input">
-                            <input type="text" name="w3lName" id="w3lName" placeholder="Name" />
+                        <div class="col-sm-12 form-input">
+                            <input type="text" name="w3lName" placeholder="Name" id="fullName" />
                         </div>
-                        <div class="col-sm-6 form-input">
-                            <input type="email" name="w3lSender" id="w3lSender" placeholder="Email" required="" />
+                        <div class="col-sm-12 form-input">
+                            <input type="email" name="w3lSender" placeholder="Email" required="" id="mail" />
                         </div>
-                        <div class="col-sm-6 form-input">
-                            <input type="text" name="w3lSubect" placeholder="Subject" class="contact-input">
+
+                        <div class="col-sm-12 form-input">
+                            <input type="number" name="w3lPhone" placeholder="Phone Number" class="contact-input"
+                                id="number">
                         </div>
-                        <div class="col-sm-6 form-input">
-                            <input type="number" name="w3lPhone" placeholder="Phone Number" class="contact-input">
+                        <div class="col-sm-12 form-input">
+                            <input type="date" name="w3lPhone" placeholder="Date Of Visit" class="contact-input"
+                                id="date">
+                        </div>
+                        <div class="col-sm-12 form-input">
+                            <select id="service" name="Services">
+                                <option value="Dental Implants">Dental Implants</option>
+                                <option value="Tooth Whitening">Tooth Whitening</option>
+                                <option value="Pediatric Dentistry">Pediatric Dentistry</option>
+                                <option value="Smile Designing">Smile Designing</option>
+                                <option value="Tooth Colored Fillings">Tooth Colored Fillings</option>
+                                <option value="Advanced Dentures">Advanced Dentures</option>
+                                <option value="Zirconia & Laser
+                                Sintered Crown & bridges">Zirconia & Laser
+                                    Sintered Crown & bridges</option>
+                                <option value="Root Canal Treatement">Root Canal Treatement</option>
+                                <option value="Laser Flap Surgeries">Laser Flap Surgeries</option>
+                                <option value="Invisible Aligners">Invisible Aligners</option>
+                            </select>
                         </div>
                     </div>
                     <div class="form-input">
-                        <textarea placeholder="Message" name="w3lMessage" id="w3lMessage" required=""></textarea>
+                        <textarea placeholder="Message" name="w3lMessage" id="message" required=""></textarea>
                     </div>
                     <div class="submit text-right">
                         <button type="submit" class="btn btn-style">Submit
@@ -172,6 +168,7 @@
             </div>
         </div>
     </section>
+
     <!-- map -->
     <div class="map">
         <iframe
@@ -321,6 +318,50 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- //bootstrap -->
     <!-- //Js scripts -->
+    <script>
+        //book appointment
+        document.getElementById("bookingForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var fullName = document.getElementById("fullName").value;
+            var email = document.getElementById("mail").value;
+            var date = document.getElementById("date").value;
+
+            var number = document.getElementById("number").value;
+            var message = document.getElementById("message").value;
+            var service = document.getElementById("service").value;
+            var contact = "+919381758514";
+
+            var encodedMessage = encodeURIComponent(
+                "Name: " +
+                fullName +
+                "\n" +
+                "Email: " +
+                email +
+                "\n" +
+                "Number: " +
+                number +
+                "\n" +
+                "Date: " +
+                date +
+                "\n" +
+                "Service: " +
+                service +
+                "\n" +
+                "Message: " +
+                message
+            );
+
+            // Mobile device, open WhatsApp
+            var whatsappLink = `https://wa.me/${contact}?text=${encodedMessage}`;
+            window.open(whatsappLink, "_blank");
+
+            // Additional: You can reset the form and show a thank you message if needed
+            document.getElementById("thankYouMessage").style.display = "block";
+            document.getElementById("bookingForm").reset();
+        });
+    </script>
+
 </body>
 
 </html>

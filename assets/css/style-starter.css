@@ -20045,8 +20045,8 @@ h5.member a {
 
 /**
  * Owl Carousel v2.3.4
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+
+ 
  */
 .owl-carousel,
 .owl-carousel .owl-item {
@@ -20260,8 +20260,7 @@ h5.member a {
 
 /**
  * Owl Carousel v2.3.4
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ 
  */
 .owl-theme .owl-dots,
 .owl-theme .owl-nav {
@@ -20495,7 +20494,7 @@ p.copy-footer-29 a {
 }
 
 p.copy-footer-29 a:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 @media (max-width: 991px) {
@@ -20694,8 +20693,8 @@ h6.title-small {
 /* testimonials section */
 /**
  * Owl Carousel v2.3.4
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+
+ 
  */
 .owl-carousel,
 .owl-carousel .owl-item {
@@ -20922,8 +20921,8 @@ h6.title-small {
 
 /**
    * Owl Carousel v2.3.4
-   * Copyright 2013-2018 David Deutsch
-   * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+  
+   
    */
 .owl-theme .owl-dots,
 .owl-theme .owl-nav {
@@ -21197,11 +21196,12 @@ h4.service-heading {
 }
 .form-inner-cont {
   max-width: 800px;
-  border: 1px solid var(--primary-color);
+  /* border: 1px solid var(--primary-color); */
   padding: 5px;
 }
 .form-inner-cont input,
-.form-inner-cont textarea {
+.form-inner-cont textarea,
+.form-inner-cont select {
   width: 100%;
   font-size: 16px;
   margin-bottom: 25px;
@@ -21213,7 +21213,14 @@ h4.service-heading {
   border: 1px solid black;
   border-radius: 4px;
 }
-
+.form-inner-cont select option {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 5px;
+  font-size: 16px;
+  border: 1px solid white !important;
+  font-weight: 700;
+}
 .form-inner-cont input:focus,
 .form-inner-cont textarea:focus {
   border: 1px solid var(--primary-color);
