@@ -11973,7 +11973,7 @@ fieldset:disabled .btn {
   ); */
   --layer: #e31a1ab5;
   /* --gradient-color: linear-gradient(to right, #17246d, #20a7a5); */
-  --gradient-color: #e31a1ab5;
+  --gradient-color: #09131d;
   --drop-color: #09131d;
 }
 
@@ -19778,7 +19778,7 @@ h5.text-blog-e {
 }
 
 .w3l-progress .progress-info {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   text-align: left;
   position: relative;
 }
@@ -19884,12 +19884,15 @@ h5.text-blog-e {
 }
 
 .w3l-progress .info1 h6.progress-tittle {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr auto;
-  width: 80%;
+  width: 80%; */
 }
-
-.w3l-progress .info2 h6.progress-tittle {
+.w3l-progress .info1 h6.progress-tittle i {
+  color: var(--primary-color);
+  margin-right: 5px;
+}
+/* .w3l-progress .info2 h6.progress-tittle {
   display: grid;
   grid-template-columns: 1fr auto;
   width: 95%;
@@ -19899,7 +19902,7 @@ h5.text-blog-e {
   display: grid;
   grid-template-columns: 1fr auto;
   width: 60%;
-}
+} */
 
 .w3l-progress .info4 h6.progress-tittle {
   display: grid;

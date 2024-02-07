@@ -168,7 +168,62 @@
             </div>
         </div>
     </section>
-
+    <!-- testimonials section -->
+    <section class="w3l-testimonials pb-5" id="testimonials">
+        <div class="container py-md-5 py-4">
+            <h3 class="title-style text-center mb-5">What Our <span>Patients</span> Say!</h3>
+            <div class="owl-testimonial owl-carousel owl-theme mx-auto" style="max-width:1000px">
+                <div class="item">
+                    <div class="slider-info">
+                        <div class="img-circle">
+                            <img src="assets/images/testi1.jpg" class="img-fluid rounded" alt="Elysian Dental Care">
+                        </div>
+                        <div class="message-info">
+                            <span class="fa fa-quote-left mr-2"></span>
+                            <div class="message">"Choosing Elysian Dental Clinic was the best decision for my family.
+                                The skilled and friendly team provided thorough consultations and gentle treatments,
+                                making every visit a positive and comfortable experience. Our smiles have never been
+                                brighter!"</div>
+                            <div class="name">- Johnson</div>
+                            <div class="desp ms-2">Businessman</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-info">
+                        <div class="img-circle">
+                            <img src="assets/images/testi2.jpg" class="img-fluid rounded" alt="Elysian Dental Care">
+                        </div>
+                        <div class="message-info">
+                            <span class="fa fa-quote-left mr-2"></span>
+                            <div class="message">"Elysian Dental Clinic exceeded my expectations! The staff's
+                                professionalism and care made my experience exceptional. From teeth cleanings to
+                                advanced procedures, they ensure top-notch dental health with a personal touch."</div>
+                            <div class="name">- Sami Wade</div>
+                            <div class="desp ms-2">Manager</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-info">
+                        <div class="img-circle">
+                            <img src="assets/images/testi3.jpg" class="img-fluid rounded" alt="Elysian Dental Care">
+                        </div>
+                        <div class="message-info">
+                            <span class="fa fa-quote-left mr-2"></span>
+                            <div class="message">"I'm truly impressed by Elysian Dental Clinic's commitment to patient
+                                satisfaction. The modern facilities and skilled professionals deliver outstanding
+                                results. They took the time to address all my concerns, ensuring a healthy and beautiful
+                                smile."</div>
+                            <div class="name">- Smith roy</div>
+                            <div class="desp ms-2">Employee</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //testimonials section -->
     <!-- map -->
     <div class="map">
         <iframe
@@ -255,6 +310,41 @@
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <!-- //common jquery plugin -->
 
+    <script src="assets/js/owl.carousel.js"></script>
+    <!-- script for testimonials -->
+    <script>
+        $(document).ready(function () {
+            $('.owl-testimonial').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    480: {
+                        items: 1,
+                        nav: false
+                    },
+                    667: {
+                        items: 1,
+                        nav: true
+                    },
+                    1000: {
+                        items: 1,
+                        nav: true
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script for testimonials -->
     <!-- theme switch js (light and dark)-->
     <script src="assets/js/theme-change.js"></script>
     <!-- //theme switch js (light and dark)-->
