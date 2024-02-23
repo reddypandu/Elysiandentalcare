@@ -4487,44 +4487,43 @@ fieldset:disabled .btn {
 
 @media (max-width: 992px) {
   .drop-items .row {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   #plus {
-      display: block;
+    display: block;
   }
 
   .nav-item.drop-down:hover .drop-items {
-      display: none;
+    display: none;
   }
 
   .nav-item.drop-down .drop-items {
-      position: unset;
-      width: 100%;
-      display: none;
-
+    position: unset;
+    width: 100%;
+    display: none;
   }
 
   .nav-item.drop-down.active .drop-items {
-      display: block;
-      transition: 10s;
-      animation: open 2s linear 1;
+    display: block;
+    transition: 10s;
+    animation: open 2s linear 1;
   }
 
   @keyframes open {
-      0% {
-          height: 10vh;
-      }
+    0% {
+      height: 10vh;
+    }
 
-      50% {
-          height: 50vh;
-      }
+    50% {
+      height: 50vh;
+    }
 
-      100% {
-          height: 100vh;
-      }
+    100% {
+      height: 100vh;
+    }
   }
 }
 .nav-pills .nav-link {
@@ -4960,7 +4959,7 @@ fieldset:disabled .btn {
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
   /* color: rgba(0, 0, 0, 0.9); */
-  color: var(--drop-color);
+  color: var(--dark);
 }
 
 .navbar-light .navbar-toggler {
@@ -12004,6 +12003,7 @@ fieldset:disabled .btn {
   --gradient-color: #e31a1ab5;
   --drop-color: #fb0000c4;
   --layer2: #fb00006b;
+  --dark:black;
 }
 
 [data-theme="dark"] {
@@ -12029,6 +12029,7 @@ fieldset:disabled .btn {
   --gradient-color: #09131d;
   --drop-color: #09131d;
   --layer2: #09131d42;
+  --dark: white;
 }
 
 * {
@@ -19072,14 +19073,14 @@ div#small-dialog iframe {
 .navbar-expand-lg .navbar-nav .nav-link.show,
 .navbar-expand-lg .navbar-nav .nav-link.active,
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-  /* color: #fff; */
+  /* color: var(--bg-color); */
   border-color: var(--primary-color);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 0 6px;
   font-size: 15px;
-  /* color: #fff; */
+  color: var(--dark);
   font-weight: 600;
   border-bottom: 1px solid transparent;
 }
