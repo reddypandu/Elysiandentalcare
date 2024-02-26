@@ -12,6 +12,8 @@
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
     <link rel="icon" href="./assets/images/favi.png" type="image/x-icon">
+    <!-- BaguetteBox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.css">
 </head>
 
 <body>
@@ -120,6 +122,7 @@
     </section>
     <!-- //inner banner -->
 
+    <!-- //videos section -->
     <div class="w3l-homeblock2 py-5">
         <div class="container py-md-5 py-4">
             <h3 class="title-style text-center mb-5">Latest <span>Photos</span></h3>
@@ -128,21 +131,29 @@
                     <div class="bg-clr-white hover-box">
                         <div class="row align-items-center">
                             <div class="col-sm-4 g">
-
-                                <img src="./assets/images/openingceremony.jpg" alt="" />
-                            </div>
-                            <div class="col-sm-4 g">
-
-                                <img src="./assets/images/clinic-photo.jpg" alt="" />
+                                <a href="./assets/images/openingceremony.jpg" data-caption="" class="gallery">
+                                    <img src="./assets/images/openingceremony.jpg" alt="Opening Ceremony Image" />
+                                </a>
 
                             </div>
+
                             <div class="col-sm-4 g">
-                                <img src="./assets/images/celebrity3.jpg" alt="" />
+                                <a href="./assets/images/clinic-photo.jpg" class="gallery">
+                                    <img src="./assets/images/clinic-photo.jpg" alt="" />
+                                </a>
+
+
                             </div>
                             <div class="col-sm-4 g">
+                                <a href="./assets/images/celebrity3.jpg" class="gallery">
+                                    <img src="./assets/images/celebrity3.jpg" alt="" />
+                                </a>
 
-                                <img src="./assets/images/clinic2.jpg" alt="" />
-
+                            </div>
+                            <div class="col-sm-4 g">
+                                <a href="./assets/images/clinic2.jpg" class="gallery">
+                                    <img src="./assets/images/clinic2.jpg" alt="" />
+                                </a>
                             </div>
                             <!-- <div class="col-sm-4 g">
 
@@ -576,6 +587,12 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- //bootstrap -->
     <!-- //Js scripts -->
+    <!-- BaguetteBox JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.js"></script>
+
+    <script>
+        baguetteBox.run('.gallery');
+    </script>
 </body>
 
 </html>

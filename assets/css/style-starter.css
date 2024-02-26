@@ -21224,8 +21224,25 @@ h3.title-big-2 {
 .service-section .card .card-header {
   height: 300px;
 }
-.service-section  .item {
+.service-section .item {
   margin-top: 20px;
+}
+.learn {
+  display: none;
+}
+
+.learn.active {
+  display: block;
+}
+
+.about-section .about-single .about-icon {
+  height: 300px !important;
+}
+
+.about-section .about-icon img {
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
 }
 .service-section .card img {
   border-radius: 8px;
