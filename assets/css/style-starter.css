@@ -12003,7 +12003,7 @@ fieldset:disabled .btn {
   --gradient-color: #e31a1ab5;
   --drop-color: #fb0000c4;
   --layer2: #fb00006b;
-  --dark:black;
+  --dark: black;
 }
 
 [data-theme="dark"] {
@@ -20058,6 +20058,7 @@ h5.member a {
   border-radius: 8px 8px 0 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .w3l-index5 .content-left-sec:hover img.scale-image {
@@ -21223,11 +21224,15 @@ h3.title-big-2 {
 .service-section .card .card-header {
   height: 300px;
 }
+.service-section  .item {
+  margin-top: 20px;
+}
 .service-section .card img {
   border-radius: 8px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   height: 100%;
+  object-fit: cover;
 }
 
 h4.service-heading {
