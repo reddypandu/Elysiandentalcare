@@ -19522,7 +19522,7 @@ p.sub-para {
   background-color: var(--bg-color);
   color: #fff;
   position: absolute;
-  right: -60px;
+  /* right: -60px; */
   bottom: -100px;
   padding: 35px 40px 38px;
   box-shadow: var(--box-shadow);
