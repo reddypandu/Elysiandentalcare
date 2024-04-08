@@ -39,8 +39,9 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="/">
-                    <!-- <i class="fas fa-tooth"></i>V-Smilez Dental -->
-                    <img src="./assets/images/logo1.jpg" alt="Elysian Dental Care" class="logo" />
+                   
+                    <img src="./assets/images/logo2.jpg" alt="Elysian Dental Care" class="logo p-2" />
+                    <h2><span> ELYSIAN </span><br> DENTAL CARE</h2>
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
@@ -114,6 +115,7 @@
 
     <style>
 
+
     </style>
     <!-- banner section -->
     <section class="w3l-main-slider" id="home">
@@ -121,11 +123,58 @@
             <div id="demo-1">
                 <div class="demo-inner-content">
                     <div class="container">
-                        <div class="banner-info">
+                        <div class="row">
+                        <div class="banner-info col-lg-7 align-content-center">
                             <p class="mb-1">Elevate your smile’s with our</p>
                             <h1 style="color: white;font-weight: 800;">Best Dental Clinic in Kondapur</h1>
-                            <a class="btn btn-style btn-style-2 mt-sm-5 mt-4" href="./appointment.html">Book Now</a>
+                            <a class="btn btn-style btn-style-2 mt-sm-5 mt-4 book-now" href="./appointment.html">Book Now</a>
                         </div>
+                        <div class="banner-info col-lg-5 desktop">
+                            <div class="form-banner">
+                                <div class="pt-5 pb-3 pl-3 pr-3 bg-white shadow">
+                                    <div class="text-center">
+                                        <h2 class="h5 text-uppercase"><b>Book An Appointment Today</b></h2>
+                                    </div>
+                                    <div>
+                                        <form method="POST" id="bookingForm">
+                                            <!-- <input type="text" name="firstname" id="firstname" class="w3-hide"> -->
+                                            <div class="form-group">
+                                                <input type="text" class="form-control shadow-sm p-4 border-0" placeholder="Enter Name" name="user_name" id="name" required="">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="tel" class="form-control shadow-sm p-4 border-0" placeholder="Enter Phone Number" name="user_number" id="number" required="">
+                                            </div>
+                            
+                                            <div class="form-group">
+                                                <input type="email" class="form-control shadow-sm p-4 border-0" placeholder="Enter Your Mail" name="user_treatment" id="email" required="">
+                                            </div>
+                                            <div class="form-group  shadow-sm border-0">
+                                                <select class="form-control border-0 px-4" name="user_location" id="service" required="">
+                                                <option value="" class="form-control" "="">Select Service</option>
+                                                    <option value="Dental Implants" class="border-0">Dental Implants</option>
+                                                    <option value="Smile Designing" class="border-0">Smile Designing</option>
+                                                    <option value="Teeth Whitening" class="border-0">Teeth Whitening</option>
+                                                    <option value="Preventive Dentistry" class="border-0">Preventive Dentistry</option>
+                                                    <option value="Tooth Colored Fillings" class="border-0">Tooth Colored Fillings</option>
+                                                    <option value="Advanced Dentures" class="border-0">Advanced Dentures</option>
+                                                    <option value="Root Canal Treatement" class="border-0">Root Canal Treatement</option>
+                                                    <option value="Laser-flap-surgeries" class="border-0">Laser-flap-surgeries</option>
+                                                    <option value="Invisible Aligners" class="border-0">Invisible Aligners</option>
+                                                    <option value="Pediaric Dentistrys" class="border-0">Pediaric Dentistry</option>
+                                                    <option value="Zirconia & Laser
+                                                    Sintered & Bridges" class="border-0">Zirconia & Laser
+                                                    Sintered & Bridges</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group text-center">
+                                                <button name="submit" type="submit" class="btn primarybgcolor text-uppercase btn-block btn-lg  border-0"><b>Submit</b></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -136,19 +185,66 @@
     <!-- home block 1 -->
     <section class="w3l-servicesblock py-5">
         <div class="container py-md-5 py-4">
-            <div class="row pb-xl-5 align-items-center">
-                <div class="col-lg-6 position-relative home-block-3-left pb-lg-0 pb-5">
-                    <div class="position-relative mobile">
+            <div class="row pb-xl-5  align-items-center">
+             
+                <div class="col-lg-6 col-md-12 col-sm-12 position-relative home-block-3-left pb-lg-0 pb-5">
+                    <div class="position-relative  mobile">
                         <img src="./assets/images/dr.Preeti-photo.jpeg" alt="Elysian Dental Care"
                             class="img-fluid radius-image">
                     </div>
-                    <div class="imginfo__box">
+                    <div class="imginfo__box  mobile">
                         <h6 class="imginfo__title">Get a Appointment Today!</h6>
                         <p>Seize the opportunity to prioritize your oral health – schedule an appointment today for
                             personalized and comprehensive dental care.</p>
                         <a href="tel:+919381758514"><i class="fas fa-phone-alt"></i>+919381758514</a>
                     </div>
+                    <div class="banner-info col-lg-6 col-md-12 mobile">
+                        <div class="form-banner">
+                            <div class="pt-5 pb-3 pl-3 pr-3 bg-white shadow">
+                                <div class="text-center">
+                                    <h2 class="h5 text-uppercase"><b>Book An Appointment Today</b></h2>
+                                </div>
+                                <div>
+                                    <form  id="bookingFormMobile">
+                                        <!-- <input type="text" name="firstname" id="firstname" class="w3-hide"> -->
+                                        <div class="form-group">
+                                            <input type="text" class="form-control shadow-sm p-4 border-0" placeholder="Enter Name" name="user_name" id="name1" required="">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="tel" class="form-control shadow-sm p-4 border-0" placeholder="Enter Phone Number" name="user_number1" id="number1" required="">
+                                        </div>
+                        
+                                        <div class="form-group">
+                                            <input type="email" class="form-control shadow-sm p-4 border-0" placeholder="Enter Your Mail" name="user_treatment" id="email1" required="">
+                                        </div>
+                                        <div class="form-group  shadow-sm border-0">
+                                            <select class="form-control border-0 px-4" name="user_location" id="service1" required="">
+                                            <option value="" class="form-control" "="">Select Service</option>
+                                                <option value="Dental Implants" class="border-0">Dental Implants</option>
+                                                <option value="Smile Designing" class="border-0">Smile Designing</option>
+                                                <option value="Teeth Whitening" class="border-0">Teeth Whitening</option>
+                                                <option value="Preventive Dentistry" class="border-0">Preventive Dentistry</option>
+                                                <option value="Tooth Colored Fillings" class="border-0">Tooth Colored Fillings</option>
+                                                <option value="Advanced Dentures" class="border-0">Advanced Dentures</option>
+                                                <option value="Root Canal Treatement" class="border-0">Root Canal Treatement</option>
+                                                <option value="Laser-flap-surgeries" class="border-0">Laser-flap-surgeries</option>
+                                                <option value="Invisible Aligners" class="border-0">Invisible Aligners</option>
+                                                <option value="Pediaric Dentistrys" class="border-0">Pediaric Dentistry</option>
+                                                <option value="Zirconia & Laser
+                                                Sintered & Bridges" class="border-0">Zirconia & Laser
+                                                Sintered & Bridges</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group text-center">
+                                            <button name="submit" type="submit" class="btn primarybgcolor text-uppercase btn-block btn-lg  border-0"><b>Submit</b></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
                 <div class="col-xl-5 col-lg-6  mt-lg-0 mt-5 pt-lg-0 pt-5 about-content">
                     <h3 class="title-style mb-md-5 mb-4">A Warm <span>Welcome</span> and a Beautiful <span>Smile</span>
                     </h3>
@@ -174,6 +270,12 @@
             margin-left: 1.5rem !important;
         }
 
+.mobile.banner-info{
+    display: none;
+}
+.book-now{
+    display: none;
+}
         @media(max-width:992px) {
             .w3l-servicesblock .mobile {
                 display: none;
@@ -182,6 +284,15 @@
             .w3l-servicesblock .about-content {
                 margin-left: 0 !important;
             }
+            .desktop.banner-info{
+display: none;
+}
+.mobile.banner-info{
+    display: block;
+}
+.book-now{
+    display: block;
+}
         }
     </style>
     <!-- home block 2 -->
@@ -1083,6 +1194,84 @@
 
     <script>
         baguetteBox.run('.gallery');
+    </script>
+    <script>
+        //book appointment
+        document.getElementById("bookingForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var fullName = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            // var date = document.getElementById("date").value;
+
+            var number = document.getElementById("number").value;
+            // var message = document.getElementById("treatment").value;
+            var service = document.getElementById("service").value;
+            var contact = "+919381758514";
+
+            var encodedMessage = encodeURIComponent(
+                "Name: " +
+                fullName +
+                "\n" +
+                "Email: " +
+                email +
+                "\n" +
+                "Number: " +
+                number +
+                "\n" +
+            
+                "Service: " +
+                service 
+              
+            );
+
+            // Mobile device, open WhatsApp
+            var whatsappLink = `https://wa.me/${contact}?text=${encodedMessage}`;
+            window.open(whatsappLink, "_blank");
+
+            // Additional: You can reset the form and show a thank you message if needed
+            document.getElementById("thankYouMessage").style.display = "block";
+            document.getElementById("bookingForm").reset();
+        });
+    </script>
+    <script>
+        //book appointment
+        document.getElementById("bookingFormMobile").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var fullName = document.getElementById("name1").value;
+            var email = document.getElementById("email1").value;
+            // var date = document.getElementById("date").value;
+
+            var number = document.getElementById("number1").value;
+            // var message = document.getElementById("treatment").value;
+            var service = document.getElementById("service1").value;
+            var contact = "+919381758514";
+
+            var encodedMessage = encodeURIComponent(
+                "Name: " +
+                fullName +
+                "\n" +
+                "Email: " +
+                email +
+                "\n" +
+                "Number: " +
+                number +
+                "\n" +
+            
+                "Service: " +
+                service 
+              
+            );
+
+            // Mobile device, open WhatsApp
+            var whatsappLink = `https://wa.me/${contact}?text=${encodedMessage}`;
+            window.open(whatsappLink, "_blank");
+
+            // Additional: You can reset the form and show a thank you message if needed
+            document.getElementById("thankYouMessage").style.display = "block";
+            document.getElementById("bookingForm").reset();
+        });
     </script>
 </body>
 

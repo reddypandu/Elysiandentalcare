@@ -19492,9 +19492,13 @@ p.sub-title {
 }
 
 .banner-info {
-  max-width: 500px;
+  max-width: 450px;
 }
-
+@media(max-width:992px){
+  .banner-info {
+    max-width: 100%;
+  }
+}
 .demo-inner-content h3 {
   font-size: 60px;
   line-height: 70px;
@@ -20620,6 +20624,7 @@ p.copy-footer-29 a:hover {
   margin: 0 auto;
   z-index: 100;
   z-index: 99;
+  padding-block: 5rem;
 }
 
 .breadcrumbs-custom-path {
@@ -21281,7 +21286,7 @@ h4.service-heading {
   color: var(--primary-color);
 }
 .form-inner-cont {
-  max-width: 800px;
+  /* max-width: 800px; */
   /* border: 1px solid var(--primary-color); */
   padding: 5px;
 }
@@ -21575,4 +21580,37 @@ h4.service-heading {
   border-bottom: 2px dotted;
   color: #e31a1a;
   width: 100px;
+}
+.navbar-brand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-brand h2{
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.navbar-brand h2 span{
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: var(--primary-color);
+}
+.form-banner .form-group button{
+  background-color: var(--primary-color);
+  color: var(--bs-white);
+}
+.banner-info .form-banner{
+
+}
+.contact-widget{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-top: 20px;
+}
+.contact-icon i{
+  color: var(--primary-color);
+  font-size: 2rem;
 }
