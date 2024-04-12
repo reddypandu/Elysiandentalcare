@@ -136,8 +136,8 @@
                                         <h2 class="h5 text-uppercase"><b>Book An Appointment Today</b></h2>
                                     </div>
                                     <div>
-                                        <form method="POST" id="bookingForm">
-                                            <!-- <input type="text" name="firstname" id="firstname" class="w3-hide"> -->
+                                        <!-- <form method="POST" id="bookingForm">
+                                       
                                             <div class="form-group">
                                                 <input type="text" class="form-control shadow-sm p-4 border-0" placeholder="Enter Name" name="user_name" id="name" required="">
                                             </div>
@@ -169,7 +169,70 @@
                                             <div class="form-group text-center">
                                                 <button name="submit" type="submit" class="btn primarybgcolor text-uppercase btn-block btn-lg  border-0"><b>Submit</b></button>
                                             </div>
-                                        </form>
+                                        </form> -->
+                                        <form method="post" class="px-3" action="//submit.form" onSubmit="return validateForm();">
+                                            <div style="max-width: 400px;">
+                                            </div>
+                                            <div style="padding-bottom: 18px;">Enter Your Name<span style="color: red;"> *</span><br/>
+                                            <input type="text" id="data_1" name="data_1" style="max-width : 450px;" class="form-control"/>
+                                            </div>
+                                            <div style="padding-bottom: 18px;">Enter Your Number<span style="color: red;"> *</span><br/>
+                                            <input type="number" id="data_2" name="data_2" style="max-width : 450px;" class="form-control"/>
+                                            </div>
+                                            <div style="padding-bottom: 18px;">Enter Your Email<span style="color: red;"> *</span><br/>
+                                            <input type="text" id="data_3" name="data_3" style="max-width : 450px;" class="form-control"/>
+                                            </div>
+                                            <div style="padding-bottom: 18px;">Select Service<span style="color: red;"> *</span><br/>
+                                            <select id="data_4" name="data_4" style="max-width : 450px;" class="form-control" required>
+                                                <option value="" class="form-control" "="">Select Service</option>
+                                                    <option value="Dental Implants" class="border-0">Dental Implants</option>
+                                                    <option value="Smile Designing" class="border-0">Smile Designing</option>
+                                                    <option value="Teeth Whitening" class="border-0">Teeth Whitening</option>
+                                                    <option value="Preventive Dentistry" class="border-0">Preventive Dentistry</option>
+                                                    <option value="Tooth Colored Fillings" class="border-0">Tooth Colored Fillings</option>
+                                                    <option value="Advanced Dentures" class="border-0">Advanced Dentures</option>
+                                                    <option value="Root Canal Treatement" class="border-0">Root Canal Treatement</option>
+                                                    <option value="Laser-flap-surgeries" class="border-0">Laser-flap-surgeries</option>
+                                                    <option value="Invisible Aligners" class="border-0">Invisible Aligners</option>
+                                                    <option value="Pediaric Dentistrys" class="border-0">Pediaric Dentistry</option>
+                                                    <option value="Zirconia & Laser
+                                                    Sintered & Bridges" class="border-0">Zirconia & Laser
+                                                    Sintered & Bridges</option>
+                                            </select>
+                                            </div>
+                                            <div style="padding-bottom: 8px;"><button name="skip_Submit"  type="submit" class="btn primarybgcolor text-uppercase btn-block btn-lg  border-0" >Submit</button></div>
+                                            <div>
+                                            <div style="float:right"><a href="https://www.100forms.com" id="lnk100" style="color: white;" >form to email</a></div>
+                                            <script src="https://www.100forms.com/js/FORMKEY:DL5W3QZL8E6E" type="text/javascript"></script>
+                                            </div>
+                                            </form>
+                                            
+                                            <script type="text/javascript">
+                                            function validateForm() {
+                                            if (isEmpty(document.getElementById('data_1').value.trim())) {
+                                            alert('Your Name is required!');
+                                            return false;
+                                            }
+                                            if (isEmpty(document.getElementById('data_2').value.trim())) {
+                                            alert('Your Number is required!');
+                                            return false;
+                                            }
+                                            if (isEmpty(document.getElementById('data_3').value.trim())) {
+                                            alert('Your Email is required!');
+                                            return false;
+                                            }
+                                            if (!validateEmail(document.getElementById('data_3').value.trim())) {
+                                            alert('Your Email must be a valid email address!');
+                                            return false;
+                                            }
+                                            return true;
+                                            }
+                                            function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+                                            function validateEmail(email) {
+                                            var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+                                            return isEmpty(email) || re.test(email);
+                                            }
+                                            </script>
                                     </div>
                                 </div>
                             </div>
@@ -182,9 +245,10 @@
     </section>
     <!-- //banner section -->
 <style>
-    .form-banner.hero-book{
-
-    }
+   .primarybgcolor{
+    background-color: red;
+    color: white !important;
+   }
 </style>
     <!-- home block 1 -->
     <section class="w3l-servicesblock py-5">
@@ -210,7 +274,7 @@
                                 </div>
                                 <div>
                                     <form  id="bookingFormMobile">
-                                        <!-- <input type="text" name="firstname" id="firstname" class="w3-hide"> -->
+                                        
                                         <div class="form-group">
                                             <input type="text" class="form-control shadow-sm p-4 border-0" placeholder="Enter Name" name="user_name" id="name1" required="">
                                         </div>
@@ -243,6 +307,7 @@
                                             <button name="submit" type="submit" class="btn primarybgcolor text-uppercase btn-block btn-lg  border-0"><b>Submit</b></button>
                                         </div>
                                     </form>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -1199,45 +1264,7 @@ display: none;
     <script>
         baguetteBox.run('.gallery');
     </script>
-    <script>
-        //book appointment
-        document.getElementById("bookingForm").addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            var fullName = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            // var date = document.getElementById("date").value;
-
-            var number = document.getElementById("number").value;
-            // var message = document.getElementById("treatment").value;
-            var service = document.getElementById("service").value;
-            var contact = "+919381758514";
-
-            var encodedMessage = encodeURIComponent(
-                "Name: " +
-                fullName +
-                "\n" +
-                "Email: " +
-                email +
-                "\n" +
-                "Number: " +
-                number +
-                "\n" +
-            
-                "Service: " +
-                service 
-              
-            );
-
-            // Mobile device, open WhatsApp
-            var whatsappLink = `https://wa.me/${contact}?text=${encodedMessage}`;
-            window.open(whatsappLink, "_blank");
-
-            // Additional: You can reset the form and show a thank you message if needed
-            document.getElementById("thankYouMessage").style.display = "block";
-            document.getElementById("bookingForm").reset();
-        });
-    </script>
+  
     <script>
         //book appointment
         document.getElementById("bookingFormMobile").addEventListener("submit", function (event) {
@@ -1272,8 +1299,8 @@ display: none;
             var whatsappLink = `https://wa.me/${contact}?text=${encodedMessage}`;
             window.open(whatsappLink, "_blank");
 
-            // Additional: You can reset the form and show a thank you message if needed
-            document.getElementById("thankYouMessage").style.display = "block";
+           
+            window.location.href = "thank-you.html";
             document.getElementById("bookingForm").reset();
         });
     </script>
