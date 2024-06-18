@@ -19622,7 +19622,7 @@ p.sub-para {
 /* home block 2 */
 .about-content h5 a {
   font-weight: 600;
-  color: var(--heading-color);
+  color: #000;
   font-size: 24px;
 }
 
